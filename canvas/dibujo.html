@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+</head>
+<body>
+    <h1>Dibujo en canvas</h1>
+    <p>
+        ¿Cuantas líneas quieres?
+        <input type="text" id="texto_lineas">
+        <input type="button" value="A Darrrle!!" id="boton">
+        <input type="button" value="Sorprendeme!" id="boton_sorpresa"> <br/>
+        <input type="button" value="Borrar Dibujito" id="boton_borrar" style="margin-left: 320px; margin-top: 10px;">
+
+    </p>
+        <canvas height="300px" width="300px" id="dibujo" style="position: absolute;"></canvas>
+        <canvas height="300px" width="300px" id="canvas" style="padding-left: 58px; padding-top: 58px;"></canvas>
+        <p id="parrafo"></p>
+    <script src="./dibujo.js"></script>
+</body>
+</html>
