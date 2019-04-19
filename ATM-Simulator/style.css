@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url('https://media.giphy.com/media/l0MrGBvi0PNUKCxkQ/source.gif');
+}
+
+header
+{
+    display: flex;
+    justify-content: center !important;
+    align-items: center; 
+    opacity: 0.97;
+}
+
+#talkbubble {
+
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height:180px;
+    background:#3F9C87;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+  }
+
+h1
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: #E7EDED;
+}
+
+#now-loading-text
+{
+    color: white;
+    position: absolute;
+    z-index: 9999;
+    padding-top: 9%;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+
+#author
+{   
+    margin-left: 65%; 
+    margin-top: 0.5rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #E7EDED;
+}
+
+#cajero
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    visibility: hidden; 
+}
+
+#cajero-image
+{
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    height: 410px;
+    width: 410px;
+    margin-right: 2.5rem;
+}
+
+
+#form-container
+{
+    margin-top: 1.5rem !important;
+    visibility: hidden;
+}
+
+#up-form
+{
+  position: absolute;  
+}
+
+#down-form
+{
+ position: relative;   
+ visibility: hidden;
+}
+
+#movimientos
+{
+    visibility: hidden;
+}
+
+#resultado
+{
+  padding-left: 3%;
+  visibility: hidden;
+}
+
+
+.wrap-content
+{
+    display: flex;
+    justify-content: center !important;
+}
+
+.wrap-input
+{
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+.margin-bottom
+{
+    margin-bottom: 1rem !important;
+}
+
+
+.btn
+{
+    margin-left: 0.5rem;
+}
+
+input
+{
+    width: fit-content !important;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 992px)
+{
+    .wrap-input
+    {
+        justify-content: center !important;
+    }
+    #up-btn
+    {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    #cajero-image
+    {
+        height: 320px;
+        width: 320px;
+        margin-right: 1rem !important;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 375px)
+{
+    #talkbubble 
+    {   
+        width: 100%;
+        height:85px;
+        margin-top: 1.2rem;
+    }
+    
+    h1
+    {
+        font-size: 1.4rem;
+    }
+
+    #author
+    {    
+        margin-left: 57%; 
+        margin-top: 0.2rem;
+        font-size: 0.8rem;
+    }
+    
+    .fas 
+    {
+        font-size: 1.5rem !important;
+    }
+    
+    .container-arrow 
+    {
+        margin-top: 0 !important;
+    }
+
+    #now-loading-text
+    {   
+        padding-top: 34%;
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 425px)
+{
+    #talkbubble 
+    {   
+        width: 100%;
+        height:100px;
+        margin-top: 1.2rem;
+    }
+    
+    h1
+    {
+        font-size: 1.6rem;
+    }
+
+    #author
+    {    
+        margin-left: 57%; 
+        margin-top: 0.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .fas 
+    {
+        font-size: 1.7rem !important;
+    }
+    
+    .container-arrow 
+    {
+        margin-top: 0 !important;
+    }
+    
+    #now-loading-text
+    {   
+        padding-top: 32%;
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media (min-width: 425px) and (max-width: 768px)
+{
+    #talkbubble 
+    {   
+        width: 95%;
+        height:110px;
+        margin-top: 1.2rem;
+    }
+    
+    h1
+    {
+        font-size: 1.7rem;
+    }
+
+    #author
+    {    
+        margin-left: 57%; 
+        margin-top: 0.2rem;
+        font-size: 1rem;
+    }
+
+    .fas 
+    {
+        font-size: 2rem !important;
+    }
+
+    .container-arrow 
+    {
+        margin-top: 0 !important;
+    }
+
+    #now-loading-text
+    {   
+        padding-top: 29%;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 992px)
+{
+   
+    #talkbubble 
+    {
+        width: 80%;
+        height:130px;
+        margin-top: 1.3rem;
+    }
+    
+    h1
+    {
+        font-size: 2.6rem;
+    }
+
+    #author
+    {    
+        margin-left: 65%; 
+        margin-top: 0.3rem;
+        font-size: 1.1rem;
+    }
+
+    .fas 
+    {
+        font-size: 2.3rem !important;
+    }
+
+    .container-arrow 
+    {
+        margin-top: 0.2rem !important;
+    }
+
+    #now-loading-text
+    {   
+        padding-top: 16%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px)
+{
+    
+    input
+    {
+        width: 50% !important;
+    }
+    
+    #cajero-image
+    {
+        height: 370px;
+        width: 370px;
+        margin-right: 1.5rem;
+    }
+
+    #talkbubble 
+    {   
+        width: 75%;
+        height:150px;
+        margin-top: 1.4rem;
+    }
+    
+    h1
+    {
+        font-size: 3.1rem;
+    }
+
+    #author
+    {    
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .fas 
+    {
+        font-size: 2.5rem !important;
+    }
+
+    .container-arrow 
+    {
+        margin-top: 0.9rem !important;
+    }
+
+    #now-loading-text
+    {   
+        padding-top: 12%;
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    input
+    {
+        width: 40% !important;
+    }
+    
+}
+
+
+/* === Loader === */
+/* background-color: #515781; For loader.gif*/
+
+#pre-loader
+{
+   
+    background-color: #676D89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#loader-img
+{
+    width: 400px;
+    height: 300px;
+
+}
+
+
+/* == Arrow ==  */
+
+.container-arrow {
+    height: 120px;
+    width: 120px;
+    margin-top: 1.5rem;
+    position: absolute;
+  }
+ 
+  .fas {
+    font-size: 3.2rem;
+    color: #E7EDED;
+    bottom: 27px;
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    animation-name:arrow;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:arrow;
+    -webkit-animation-duration:1.2s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+  }
+  
+  @keyframes arrow
+      {
+      0%   {bottom:0;}
+      75% {bottom:30px;}
+      100% {bottom:0;}
+      }
+  @-webkit-keyframes arrow
+      {
+      0%   {bottom:0;}
+    75% {bottom:30px;}
+      100% {bottom:0;}
+    }
+  
